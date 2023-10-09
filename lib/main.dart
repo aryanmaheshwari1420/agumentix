@@ -1,3 +1,4 @@
+import 'package:agumentix/Frontend/view/Secondpage.dart';
 import 'package:agumentix/Frontend/view/UI.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: SecondPage(),
     );
   }
 }

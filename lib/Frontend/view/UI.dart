@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             Container(
-              color: Color.fromARGB(255, 25, 25, 29),
+              color: const Color.fromARGB(255, 25, 25, 29),
               height: 400,
               width: MediaQuery.of(context).size.width,
               child: Image.asset(
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
               child: ListView(
                 children: [
                   Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                           400, // Fill remaining screen height
                       child: Column(
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
                           Column(
