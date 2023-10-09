@@ -105,15 +105,18 @@ class _SecondPageState extends State<SecondPage> {
                   children: [
                     Expanded(
                       flex: 1,
-                      child: Container(
-                        // color: Colors.red, // Adjust the color as needed
-                        child: Align(
-                          alignment: Alignment.topLeft,
-                          child: Text(
-                            "  NEAREST CAR ",
-                            style: TextStyle(
-                              color: Colors
-                                  .black, // Adjust the text color as needed
+                      child: Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: Container(
+                          child: Align(
+                            alignment: Alignment.topLeft,
+                            child: Text(
+                              "  NEAREST CAR ",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Colors
+                                    .black, // Adjust the text color as needed
+                              ),
                             ),
                           ),
                         ),
@@ -123,10 +126,9 @@ class _SecondPageState extends State<SecondPage> {
                       flex: 5,
                       child: Container(
                         child: Image.asset(
-                          'assets/images/edit.png',
+                          'assets/images/editcar.png',
                           fit: BoxFit.fill,
                         ),
-                        color: Colors.green, // Adjust the color as needed
                       ),
                     ),
                     Expanded(
@@ -139,8 +141,10 @@ class _SecondPageState extends State<SecondPage> {
                                 child: Align(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "  TESLA MODEL S ",
+                                    "  Tesla Model S ",
                                     style: TextStyle(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold,
                                       color: Colors
                                           .black, // Adjust the text color as needed
                                     ),
@@ -162,9 +166,13 @@ class _SecondPageState extends State<SecondPage> {
                                     Text(
                                       "228km", // Battery text
                                       style: TextStyle(
+                                        fontWeight: FontWeight.w500,
                                         color: Colors
                                             .black, // Adjust the text color as needed
                                       ),
+                                    ),
+                                    SizedBox(
+                                      width: 25,
                                     ),
                                     Icon(
                                       Icons
@@ -175,9 +183,21 @@ class _SecondPageState extends State<SecondPage> {
                                     Text(
                                       "4min", // Walking text
                                       style: TextStyle(
+                                        fontWeight: FontWeight.w500,
                                         color: Colors
                                             .black, // Adjust the text color as needed
                                       ),
+                                    ),
+                                    SizedBox(
+                                      width: 25,
+                                    ),
+                                    Icon(Icons.stream_rounded),
+                                    SizedBox(
+                                      width: 25,
+                                    ),
+                                    Icon(Icons.battery_charging_full_rounded),
+                                    SizedBox(
+                                      width: 25,
                                     ),
                                     Icon(
                                       Icons
@@ -188,6 +208,7 @@ class _SecondPageState extends State<SecondPage> {
                                     Text(
                                       "10.20/h", // Dollar text
                                       style: TextStyle(
+                                        fontWeight: FontWeight.w500,
                                         color: Colors
                                             .black, // Adjust the text color as needed
                                       ),
