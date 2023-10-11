@@ -234,6 +234,10 @@ class _SecondPageState extends State<SecondPage> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(50),
                             child: Container(
+                              child: Image.asset(
+                                "assets/images/map.png",
+                                fit: BoxFit.cover,
+                              ),
                               color: Colors.purple,
                             ),
                           ),
@@ -243,11 +247,60 @@ class _SecondPageState extends State<SecondPage> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(50),
-                            child: Container(
-                              color: Colors.pinkAccent,
-                            ),
-                          ),
+                              borderRadius: BorderRadius.circular(50),
+                              child: Container(
+                                color: Color.fromARGB(255, 235, 228, 228),
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      flex: 5,
+                                      child: CircleAvatar(
+                                        radius: 40,
+                                        backgroundImage: AssetImage(
+                                          "assets/images/frontface.jpg",
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 2,
+                                      child: Center(
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                              child: Text("Edgar Schultz"),
+                                            ),
+                                            Container(
+                                              child: Divider(
+                                                // Add a Divider widget for the line
+                                                color: Color.fromARGB(
+                                                    255,
+                                                    108,
+                                                    102,
+                                                    102), // You can customize the color
+                                                thickness:
+                                                    0.6, // You can customize the thickness
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 3,
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          "\$2,912.6", // Add the "$" symbol before the number
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize:
+                                                  24), // Adjust the font size as needed
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )),
                         ))
                   ],
                 )),
