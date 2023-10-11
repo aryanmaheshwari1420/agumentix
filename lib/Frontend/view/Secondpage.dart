@@ -289,11 +289,149 @@ class _SecondPageState extends State<SecondPage> {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(35),
-                    color: Colors.amberAccent,
-                  ),
-                ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(35),
+                      color: Color.fromARGB(255, 40, 40, 45),
+                    ),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          flex: 6,
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Column(
+                              children: [
+                                // Row containing "SAVED FILTERS" text and an icon
+                                Row(
+                                  children: [
+                                    Container(
+                                      child: Align(
+                                        alignment: Alignment.topLeft,
+                                        child: Text("SAVED FILTERS"),
+                                      ),
+                                    ),
+                                    Spacer(), // Pushes the icon to the right
+                                    Icon(Icons
+                                        .do_not_disturb_on_sharp), // Replace 'your_icon' with the desired icon
+                                  ],
+                                ),
+                                // Text "3 Offers"
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Text(
+                                      "3 Offers",
+                                      style: TextStyle(
+                                          fontSize: 24, color: Colors.white),
+                                    )),
+                                // Row containing icons and text
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.navigation,
+                                      color: Color.fromARGB(146, 214, 199, 199),
+                                    ),
+                                    Text(
+                                      ">500m",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    SizedBox(width: 25),
+                                    Icon(
+                                      Icons.offline_share_outlined,
+                                      color: Color.fromARGB(146, 214, 199, 199),
+                                    ),
+                                    Text(
+                                      ">500m",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    SizedBox(width: 25),
+                                    Icon(
+                                      Icons.stream_rounded,
+                                      color: Color.fromARGB(146, 214, 199, 199),
+                                    ),
+                                    SizedBox(width: 25),
+                                    Icon(
+                                      Icons.battery_charging_full_rounded,
+                                      color: Color.fromARGB(146, 214, 199, 199),
+                                    ),
+                                    SizedBox(
+                                      width: 70,
+                                    ),
+                                    Icon(
+                                      Icons.forward,
+                                      color: Color.fromARGB(146, 214, 199, 199),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 4,
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: Column(
+                                children: [
+                                  Divider(
+                                    thickness: 1.5,
+                                  ),
+                                  Align(
+                                      alignment: Alignment.topLeft,
+                                      child: Text(
+                                        "  22 Offers",
+                                        style: TextStyle(
+                                            fontSize: 24, color: Colors.white),
+                                      )),
+                                  // Row containing icons and text
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "  <\$6.30/h",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      SizedBox(width: 30),
+                                      Icon(
+                                        Icons.navigation,
+                                        color:
+                                            Color.fromARGB(146, 214, 199, 199),
+                                      ),
+                                      Text(
+                                        "<1500m",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      SizedBox(width: 30),
+                                      Icon(Icons.offline_share_outlined,
+                                          color: Color.fromARGB(
+                                              146, 214, 199, 199)),
+                                      SizedBox(width: 112),
+                                      Icon(Icons.forward,
+                                          color: Color.fromARGB(
+                                              146, 214, 199, 199)),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )),
               ),
             ),
           ],
