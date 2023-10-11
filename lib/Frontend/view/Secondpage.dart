@@ -99,127 +99,107 @@ class _SecondPageState extends State<SecondPage> {
                 )),
             Expanded(
               flex: 3,
-              child: Container(
-                color: Color.fromARGB(255, 229, 219, 222),
-                child: Column(
-                  children: [
-                    Expanded(
-                      flex: 1,
-                      child: Padding(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(35),
+                    color: Color.fromARGB(255, 247, 236, 239),
+                  ),
+                  child: Column(
+                    children: [
+                      Padding(
                         padding: const EdgeInsets.all(4.0),
-                        child: Container(
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              "  NEAREST CAR ",
-                              style: TextStyle(
-                                fontWeight: FontWeight.w500,
-                                color: Colors
-                                    .black, // Adjust the text color as needed
-                              ),
+                        child: Align(
+                          alignment: Alignment.topLeft,
+                          child: Text(
+                            "     NEAREST CAR",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
                             ),
                           ),
                         ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 5,
-                      child: Container(
-                        child: Image.asset(
-                          'assets/images/editcar.png',
-                          fit: BoxFit.fill,
+                      Expanded(
+                        flex: 5,
+                        child: Container(
+                          child: Image.asset(
+                            'assets/images/editcar.png',
+                            fit: BoxFit
+                                .cover, // Use BoxFit.cover to fit the image within the space
+                          ),
                         ),
                       ),
-                    ),
-                    Expanded(
+                      Expanded(
                         flex: 4,
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                                child: Align(
-                                  alignment: Alignment.topLeft,
-                                  child: Text(
-                                    "  Tesla Model S ",
-                                    style: TextStyle(
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors
-                                          .black, // Adjust the text color as needed
-                                    ),
+                              padding: const EdgeInsets.all(5.0),
+                              child: Align(
+                                alignment: Alignment.topLeft,
+                                child: Text(
+                                  "  Tesla Model S",
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
                                   ),
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                                child: Row(
-                                  children: [
-                                    Icon(
-                                      Icons
-                                          .battery_full, // Replace with your battery icon
-                                      color: Colors
-                                          .black, // Adjust the icon color as needed
+                              padding: const EdgeInsets.all(5.0),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.battery_full,
+                                    color: Colors.black,
+                                  ),
+                                  Text(
+                                    "228km",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black,
                                     ),
-                                    Text(
-                                      "228km", // Battery text
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors
-                                            .black, // Adjust the text color as needed
-                                      ),
+                                  ),
+                                  SizedBox(width: 25),
+                                  Icon(
+                                    Icons.directions_walk,
+                                    color: Colors.black,
+                                  ),
+                                  Text(
+                                    "4min",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black,
                                     ),
-                                    SizedBox(
-                                      width: 25,
+                                  ),
+                                  SizedBox(width: 25),
+                                  Icon(Icons.stream_rounded),
+                                  SizedBox(width: 25),
+                                  Icon(Icons.battery_charging_full_rounded),
+                                  SizedBox(width: 25),
+                                  Icon(
+                                    Icons.attach_money,
+                                    color: Colors.black,
+                                  ),
+                                  Text(
+                                    "10.20/h",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      color: Colors.black,
                                     ),
-                                    Icon(
-                                      Icons
-                                          .directions_walk, // Replace with your walking icon
-                                      color: Colors
-                                          .black, // Adjust the icon color as needed
-                                    ),
-                                    Text(
-                                      "4min", // Walking text
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors
-                                            .black, // Adjust the text color as needed
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 25,
-                                    ),
-                                    Icon(Icons.stream_rounded),
-                                    SizedBox(
-                                      width: 25,
-                                    ),
-                                    Icon(Icons.battery_charging_full_rounded),
-                                    SizedBox(
-                                      width: 25,
-                                    ),
-                                    Icon(
-                                      Icons
-                                          .attach_money, // Replace with your dollar icon
-                                      color: Colors
-                                          .black, // Adjust the icon color as needed
-                                    ),
-                                    Text(
-                                      "10.20/h", // Dollar text
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w500,
-                                        color: Colors
-                                            .black, // Adjust the text color as needed
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
                             )
                           ],
-                        )),
-                  ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -305,10 +285,17 @@ class _SecondPageState extends State<SecondPage> {
                   ],
                 )),
             Expanded(
-                flex: 3,
+              flex: 3,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  color: Colors.amberAccent,
-                )),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(35),
+                    color: Colors.amberAccent,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
