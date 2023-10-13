@@ -113,8 +113,8 @@ class _ThirdPageState extends State<ThirdPage> {
                                       ClipRRect(
                                         borderRadius: BorderRadius.circular(15),
                                         child: Container(
-                                          width: 140,
-                                          height: 140,
+                                          width: 150,
+                                          height: 125,
                                           color: Colors.blue,
                                           child: Center(
                                             child: Text("Container 1"),
@@ -127,8 +127,8 @@ class _ThirdPageState extends State<ThirdPage> {
                                       ClipRRect(
                                         borderRadius: BorderRadius.circular(15),
                                         child: Container(
-                                          width: 140,
-                                          height: 140,
+                                          width: 150,
+                                          height: 125,
                                           color: Colors.blue,
                                           child: Center(
                                             child: Text("Container 2"),
@@ -141,8 +141,8 @@ class _ThirdPageState extends State<ThirdPage> {
                                       ClipRRect(
                                         borderRadius: BorderRadius.circular(15),
                                         child: Container(
-                                          width: 140,
-                                          height: 140,
+                                          width: 150,
+                                          height: 125,
                                           color: Colors.blue,
                                           child: Center(
                                             child: Text("Container 3"),
@@ -167,9 +167,7 @@ class _ThirdPageState extends State<ThirdPage> {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
-                                      width: 140,
-                                    ),
+                                    SizedBox(width: 100),
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(25),
                                       child: Container(
@@ -178,8 +176,8 @@ class _ThirdPageState extends State<ThirdPage> {
                                           style: ButtonStyle(
                                             minimumSize:
                                                 MaterialStateProperty.all(Size(
-                                                    100,
-                                                    45)), // Adjust the width and height as needed
+                                                    150,
+                                                    50)), // Adjust the width and height as needed
                                           ),
                                           child: Text(
                                             "Book Now",
