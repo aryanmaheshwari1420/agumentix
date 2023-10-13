@@ -136,6 +136,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  spacer:
+    dependency: "direct main"
+    description:
+      name: spacer
+      sha256: c21b61c8b180f7a89f9c84c665d142f381bcf11a96eb7331597573a8506ef017
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   stack_trace:
     dependency: transitive
     description:
@@ -186,3 +194,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.19.6 <3.0.0"
+  flutter: ">=1.17.0"
