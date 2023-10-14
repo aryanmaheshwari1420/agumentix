@@ -28,7 +28,7 @@ class _ThirdPageState extends State<ThirdPage> {
             child: Stack(
               children: [
                 Container(
-                    color: Colors.deepPurple,
+                    color: Color.fromARGB(255, 23, 23, 24),
                     width: MediaQuery.of(context).size.width,
                     child: Column(
                       children: [
@@ -38,10 +38,14 @@ class _ThirdPageState extends State<ThirdPage> {
                             children: [
                               Text(
                                 "Porsche Taycan",
-                                style: TextStyle(fontSize: 24),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 24),
                               ),
                               Spacer(),
-                              Icon(Icons.cancel)
+                              Icon(
+                                Icons.cancel,
+                                color: Colors.white,
+                              )
                             ],
                           ),
                         ),
@@ -49,13 +53,23 @@ class _ThirdPageState extends State<ThirdPage> {
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
                             children: [
-                              Icon(Icons.battery_6_bar_rounded),
-                              Text("284km"),
+                              Icon(
+                                Icons.battery_6_bar_rounded,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "284km",
+                                style: TextStyle(color: Colors.white),
+                              ),
                               SizedBox(
                                 width: 20,
                               ),
-                              Icon(Icons.directions_walk),
-                              Text("4min"),
+                              Icon(
+                                Icons.directions_walk,
+                                color: Colors.white,
+                              ),
+                              Text("4min",
+                                  style: TextStyle(color: Colors.white)),
                             ],
                           ),
                         )
@@ -76,7 +90,7 @@ class _ThirdPageState extends State<ThirdPage> {
                             40), // Adjust the radius for the top-right corner
                       ),
                       child: Container(
-                        color: Colors.teal,
+                        color: Colors.white,
                         child: Column(
                           children: [
                             Expanded(
@@ -91,7 +105,9 @@ class _ThirdPageState extends State<ThirdPage> {
                                             29.0), // Adjust the value for the desired left space
                                     child: Text(
                                       "Features",
-                                      style: TextStyle(fontSize: 20),
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                 ),
@@ -100,7 +116,7 @@ class _ThirdPageState extends State<ThirdPage> {
                             Expanded(
                               flex: 5,
                               child: Container(
-                                color: Colors.teal,
+                                color: Colors.white,
                                 child: SingleChildScrollView(
                                   scrollDirection: Axis.horizontal,
                                   reverse:
@@ -110,45 +126,217 @@ class _ThirdPageState extends State<ThirdPage> {
                                       Container(
                                         width: 20, // Fixed spacing
                                       ),
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(15),
-                                        child: Container(
+                                      Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(
+                                                15), // Rounded border
+                                            border: Border.all(
+                                              color: Colors
+                                                  .black, // Black border color
+                                              width: 0.2, // Border width
+                                            ),
+                                          ),
                                           width: 150,
                                           height: 125,
-                                          color: Colors.blue,
-                                          child: Center(
-                                            child: Text("Container 1"),
-                                          ),
-                                        ),
-                                      ),
+                                          // color: Colors.white,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 5,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      10.0),
+                                                  child: Container(
+                                                    // color: Colors.amber,
+                                                    child: Align(
+                                                      alignment:
+                                                          Alignment.topLeft,
+                                                      child: Icon(
+                                                          Icons
+                                                              .blur_circular_outlined,
+                                                          color: Colors.black),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                flex: 5,
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Container(
+                                                      // color: Colors.green,
+                                                      child: Center(
+                                                        child: Text(
+                                                            "Climate Control",
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w700)),
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      child: Align(
+                                                        alignment: Alignment(
+                                                            -0.4,
+                                                            0), // Adjust alignment to left
+                                                        child: Text("Two-zone",
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400)),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              )
+                                            ],
+                                          )),
                                       Container(
                                         width: 20, // Fixed spacing
                                       ),
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(15),
-                                        child: Container(
+                                      Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.circular(
+                                                15), // Rounded border
+                                            border: Border.all(
+                                              color: Colors
+                                                  .black, // Black border color
+                                              width: 0.2, // Border width
+                                            ),
+                                          ),
                                           width: 150,
                                           height: 125,
-                                          color: Colors.blue,
-                                          child: Center(
-                                            child: Text("Container 2"),
-                                          ),
-                                        ),
-                                      ),
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                flex: 5,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      10.0),
+                                                  child: Container(
+                                                    // color: Colors.amber,
+                                                    child: Align(
+                                                      alignment:
+                                                          Alignment.topLeft,
+                                                      child: Icon(
+                                                        Icons
+                                                            .meeting_room_outlined,
+                                                        color: Colors.black,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Expanded(
+                                                flex: 5,
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Container(
+                                                      // color: Colors.green,
+                                                      child: Center(
+                                                        child: Text(
+                                                            "Accleration",
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w700)),
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      child: Align(
+                                                        alignment: Alignment(
+                                                            -0.2,
+                                                            0), // Adjust alignment to left
+                                                        child: Text(
+                                                            "4.2s 0-100 km/h",
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400)),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              )
+                                            ],
+                                          )),
                                       Container(
                                         width: 20, // Fixed spacing
                                       ),
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(15),
-                                        child: Container(
-                                          width: 150,
-                                          height: 125,
-                                          color: Colors.blue,
-                                          child: Center(
-                                            child: Text("Container 3"),
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(
+                                              15), // Rounded border
+                                          border: Border.all(
+                                            color: Colors
+                                                .black, // Black border color
+                                            width: 0.2, // Border width
                                           ),
                                         ),
-                                      ),
+                                        width: 150,
+                                        height: 125,
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              flex: 5,
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(10.0),
+                                                child: Container(
+                                                  child: Align(
+                                                    alignment:
+                                                        Alignment.topLeft,
+                                                    child: Icon(
+                                                      Icons.car_crash_outlined,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              flex: 5,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Container(
+                                                    child: Center(
+                                                      child: Text(
+                                                        "Electric Car",
+                                                        style: TextStyle(
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .w700),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    child: Align(
+                                                      alignment:
+                                                          Alignment(-0.4, 0),
+                                                      child: Text(
+                                                        "100 % electric",
+                                                        style: TextStyle(
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .w400),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
@@ -163,17 +351,22 @@ class _ThirdPageState extends State<ThirdPage> {
                                       child: Container(
                                         child: Text(
                                           "\$13.75/h",
-                                          style: TextStyle(fontSize: 24),
+                                          style: TextStyle(
+                                              fontSize: 35,
+                                              fontWeight: FontWeight.bold),
                                         ),
                                       ),
                                     ),
-                                    SizedBox(width: 100),
+                                    SizedBox(width: 45),
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(25),
                                       child: Container(
                                         child: ElevatedButton(
                                           onPressed: () {},
                                           style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    Colors.black),
                                             minimumSize:
                                                 MaterialStateProperty.all(Size(
                                                     150,
@@ -193,7 +386,7 @@ class _ThirdPageState extends State<ThirdPage> {
                           ],
                         ),
                       )),
-                )
+                ),
               ],
             ),
           )
