@@ -21,6 +21,10 @@ class _ThirdPageState extends State<ThirdPage> {
           Expanded(
               flex: 6,
               child: Container(
+                child: Image.asset(
+                  "assets/images/mapimage.jpg",
+                  fit: BoxFit.fill,
+                ),
                 color: Colors.amber,
               )),
           Expanded(
@@ -28,7 +32,10 @@ class _ThirdPageState extends State<ThirdPage> {
             child: Stack(
               children: [
                 Container(
-                    color: Color.fromARGB(255, 23, 23, 24),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Color.fromARGB(255, 23, 23, 24)),
+                    // color: Color.fromARGB(255, 23, 23, 24),
                     width: MediaQuery.of(context).size.width,
                     child: Column(
                       children: [
@@ -85,9 +92,9 @@ class _ThirdPageState extends State<ThirdPage> {
                   child: ClipRRect(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(
-                            40), // Adjust the radius for the top-left corner
+                            30), // Adjust the radius for the top-left corner
                         topRight: Radius.circular(
-                            40), // Adjust the radius for the top-right corner
+                            30), // Adjust the radius for the top-right corner
                       ),
                       child: Container(
                         color: Colors.white,
