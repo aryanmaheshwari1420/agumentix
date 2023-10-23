@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -37,16 +39,16 @@ class _SecondPageState extends State<SecondPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment
                                     .center, // Align the icon and text in the center horizontally
-                                children: [
-                                  Icon(
+                                children: const[
+                                   Icon(
                                     Icons
                                         .info, // Replace with your desired icon
                                     color: Colors.black, // Icon color
                                   ),
-                                  const SizedBox(
+                                   SizedBox(
                                       width:
                                           8), // Add some spacing between the icon and text
-                                  Text(
+                                   Text(
                                     "Information",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -74,16 +76,16 @@ class _SecondPageState extends State<SecondPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment
                                     .center, // Align the icon and text in the center horizontally
-                                children: [
-                                  Icon(
+                                children: const[
+                                   Icon(
                                     Icons
                                         .notification_add, // Replace with your desired icon
                                     color: Colors.black, // Icon color
                                   ),
-                                  const SizedBox(
+                                   SizedBox(
                                       width:
                                           8), // Add some spacing between the icon and text
-                                  Text(
+                                   Text(
                                     "Notification",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
@@ -104,12 +106,12 @@ class _SecondPageState extends State<SecondPage> {
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(35),
-                    color: Color.fromARGB(255, 247, 236, 239),
+                    color: const Color.fromARGB(255, 247, 236, 239),
                   ),
                   child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
+                      const Padding(
+                        padding: EdgeInsets.all(4.0),
                         child: Align(
                           alignment: Alignment.topLeft,
                           child: Text(
@@ -135,8 +137,8 @@ class _SecondPageState extends State<SecondPage> {
                         flex: 4,
                         child: Column(
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
+                            const Padding(
+                              padding: EdgeInsets.all(5.0),
                               child: Align(
                                 alignment: Alignment.topLeft,
                                 child: Text(
@@ -152,20 +154,20 @@ class _SecondPageState extends State<SecondPage> {
                             Padding(
                               padding: const EdgeInsets.all(5.0),
                               child: Row(
-                                children: [
-                                  Icon(
+                                children:const [
+                                   Icon(
                                     Icons.battery_full,
                                     color: Colors.black,
                                   ),
-                                  Text(
+                                   Text(
                                     "228km",
                                     style: TextStyle(
                                       fontWeight: FontWeight.w500,
                                       color: Colors.black,
                                     ),
                                   ),
-                                  SizedBox(width: 25),
-                                  Icon(
+                                   SizedBox(width: 25),
+                                   Icon(
                                     Icons.directions_walk,
                                     color: Colors.black,
                                   ),
@@ -176,12 +178,12 @@ class _SecondPageState extends State<SecondPage> {
                                       color: Colors.black,
                                     ),
                                   ),
-                                  SizedBox(width: 25),
-                                  Icon(Icons.stream_rounded),
-                                  SizedBox(width: 25),
-                                  Icon(Icons.battery_charging_full_rounded),
-                                  SizedBox(width: 25),
-                                  Icon(
+                                   SizedBox(width: 25),
+                                   Icon(Icons.stream_rounded),
+                                   SizedBox(width: 25),
+                                   Icon(Icons.battery_charging_full_rounded),
+                                   SizedBox(width: 25),
+                                   Icon(
                                     Icons.attach_money,
                                     color: Colors.black,
                                   ),
@@ -214,11 +216,11 @@ class _SecondPageState extends State<SecondPage> {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(50),
                             child: Container(
+                              color: Colors.purple,
                               child: Image.asset(
                                 "assets/images/map.png",
                                 fit: BoxFit.cover,
                               ),
-                              color: Colors.purple,
                             ),
                           ),
                         )),
@@ -229,10 +231,10 @@ class _SecondPageState extends State<SecondPage> {
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(50),
                               child: Container(
-                                color: Color.fromARGB(255, 235, 228, 228),
+                                color: const Color.fromARGB(255, 235, 228, 228),
                                 child: Column(
                                   children: [
-                                    Expanded(
+                                    const Expanded(
                                       flex: 5,
                                       child: CircleAvatar(
                                         radius: 40,
@@ -247,10 +249,10 @@ class _SecondPageState extends State<SecondPage> {
                                         child: Column(
                                           children: [
                                             Container(
-                                              child: Text("Edgar Schultz"),
+                                              child: const Text("Edgar Schultz"),
                                             ),
                                             Container(
-                                              child: Divider(
+                                              child: const Divider(
                                                 // Add a Divider widget for the line
                                                 color: Color.fromARGB(
                                                     255,
@@ -269,7 +271,7 @@ class _SecondPageState extends State<SecondPage> {
                                       flex: 3,
                                       child: Container(
                                         alignment: Alignment.center,
-                                        child: Text(
+                                        child: const Text(
                                           "\$2,912.6", // Add the "$" symbol before the number
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold,
@@ -291,7 +293,7 @@ class _SecondPageState extends State<SecondPage> {
                 child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(35),
-                      color: Color.fromARGB(255, 40, 40, 45),
+                      color: const Color.fromARGB(255, 40, 40, 45),
                     ),
                     child: Column(
                       children: [
@@ -305,21 +307,21 @@ class _SecondPageState extends State<SecondPage> {
                                 Row(
                                   children: [
                                     Container(
-                                      child: Align(
+                                      child: const Align(
                                         alignment: Alignment.topLeft,
                                         child: Text("SAVED FILTERS"),
                                       ),
                                     ),
-                                    Spacer(), // Pushes the icon to the right
-                                    Icon(Icons
+                                    const Spacer(), // Pushes the icon to the right
+                                    const Icon(Icons
                                         .do_not_disturb_on_sharp), // Replace 'your_icon' with the desired icon
                                   ],
                                 ),
                                 // Text "3 Offers"
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 ),
-                                Align(
+                                const Align(
                                     alignment: Alignment.topLeft,
                                     child: Text(
                                       "3 Offers",
@@ -328,44 +330,44 @@ class _SecondPageState extends State<SecondPage> {
                                     )),
                                 // Row containing icons and text
                                 Row(
-                                  children: [
-                                    Icon(
+                                  children: const[
+                                     Icon(
                                       Icons.navigation,
                                       color: Color.fromARGB(146, 214, 199, 199),
                                     ),
-                                    Text(
+                                     Text(
                                       ">500m",
                                       style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         color: Colors.white,
                                       ),
                                     ),
-                                    SizedBox(width: 25),
-                                    Icon(
+                                     SizedBox(width: 25),
+                                     Icon(
                                       Icons.offline_share_outlined,
                                       color: Color.fromARGB(146, 214, 199, 199),
                                     ),
-                                    Text(
+                                     Text(
                                       ">500m",
                                       style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         color: Colors.white,
                                       ),
                                     ),
-                                    SizedBox(width: 25),
-                                    Icon(
+                                     SizedBox(width: 25),
+                                     Icon(
                                       Icons.stream_rounded,
                                       color: Color.fromARGB(146, 214, 199, 199),
                                     ),
-                                    SizedBox(width: 25),
-                                    Icon(
+                                     SizedBox(width: 25),
+                                     Icon(
                                       Icons.battery_charging_full_rounded,
                                       color: Color.fromARGB(146, 214, 199, 199),
                                     ),
-                                    SizedBox(
+                                     SizedBox(
                                       width: 70,
                                     ),
-                                    Icon(
+                                     Icon(
                                       Icons.forward,
                                       color: Color.fromARGB(146, 214, 199, 199),
                                     )
@@ -382,10 +384,10 @@ class _SecondPageState extends State<SecondPage> {
                               padding: const EdgeInsets.all(4.0),
                               child: Column(
                                 children: [
-                                  Divider(
+                                  const Divider(
                                     thickness: 1.5,
                                   ),
-                                  Align(
+                                  const Align(
                                       alignment: Alignment.topLeft,
                                       child: Text(
                                         "  22 Offers",
@@ -394,33 +396,33 @@ class _SecondPageState extends State<SecondPage> {
                                       )),
                                   // Row containing icons and text
                                   Row(
-                                    children: [
-                                      Text(
+                                    children: const[
+                                       Text(
                                         "  <\$6.30/h",
                                         style: TextStyle(
                                           fontWeight: FontWeight.w500,
                                           color: Colors.white,
                                         ),
                                       ),
-                                      SizedBox(width: 30),
-                                      Icon(
+                                       SizedBox(width: 30),
+                                       Icon(
                                         Icons.navigation,
                                         color:
                                             Color.fromARGB(146, 214, 199, 199),
                                       ),
-                                      Text(
+                                       Text(
                                         "<1500m",
                                         style: TextStyle(
                                           fontWeight: FontWeight.w500,
                                           color: Colors.white,
                                         ),
                                       ),
-                                      SizedBox(width: 30),
-                                      Icon(Icons.offline_share_outlined,
-                                          color: Color.fromARGB(
-                                              146, 214, 199, 199)),
-                                      SizedBox(width: 112),
-                                      Icon(Icons.forward,
+                                       SizedBox(width: 30),
+                                       Icon(Icons.offline_share_outlined,
+                                 color: Color.fromARGB(
+                                     146, 214, 199, 199)),
+                                       SizedBox(width: 112),
+                                       Icon(Icons.forward,
                                           color: Color.fromARGB(
                                               146, 214, 199, 199)),
                                     ],
